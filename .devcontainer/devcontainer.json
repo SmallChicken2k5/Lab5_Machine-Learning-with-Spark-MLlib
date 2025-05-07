@@ -1,0 +1,19 @@
+{
+    "name": "PySpark Dev",
+    "image": "mcr.microsoft.com/devcontainers/python:3.9",
+    "features": {
+      "ghcr.io/devcontainers/features/java:1": {
+        "version": "11"
+      }
+    },
+    "postCreateCommand": "pip install pyspark findspark jupyter",
+    "forwardPorts": [8888],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        }
+      }
+    }
+  }
+  
